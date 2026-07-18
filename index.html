@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iniyan — notes from elsewhere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Parisienne&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <span class="preloader-mark">iniyan</span>
+    <div class="preloader-bar">
+      <div class="preloader-fill" id="preloaderFill"></div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <div class="logo">
+      <span class="logo-main">iniyan</span>
+      <span class="logo-sub">notes from elsewhere</span>
+    </div>
+    <div class="nav-right">
+      <a href="https://instagram.com/" target="_blank" rel="noopener" class="insta-btn" data-hover>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4.2" />
+          <circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" stroke="none" />
+        </svg>
+        <span>instagram</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" data-hover>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen menu overlay -->
+  <nav class="menu-overlay" id="menuOverlay">
+    <ul class="menu-list">
+      <li><a href="#hero" class="menu-link" data-hover>home</a></li>
+      <li><a href="about.html" class="menu-link" data-hover>about</a></li>
+      <li><a href="globe.html" class="menu-link" data-hover>countries</a></li>
+      <li><a href="https://instagram.com/" target="_blank" rel="noopener" class="menu-link" data-hover>instagram</a>
+      </li>
+    </ul>
+    <div class="menu-footer">
+      <span>dublin, ireland</span>
+      <span>est. this year</span>
+    </div>
+  </nav>
+
+  <main class="scroller">
+
+    <!-- SECTION 1 — HERO -->
+    <section id="hero" class="section hero">
+      <!-- REPLACE: swap this div's background-image (see style.css .hero-bg) with your own full-bleed travel photo -->
+      <div class="hero-bg"></div>
+      <div class="hero-grain"></div>
+      <div class="hero-vignette"></div>
+
+      <div class="hero-content">
+        <h1 class="hero-title" aria-label="notes from elsewhere">
+          <span class="line-wrap"><span class="line">notes</span></span>
+          <span class="line-wrap"><span class="line">from</span></span>
+          <span class="line-wrap"><span class="line">elsewhere</span></span>
+        </h1>
+        <a href="#countries" class="btn-outline" data-hover>
+          <span>where I've been</span>
+        </a>
+      </div>
+
+      <div class="scroll-cue" data-hover>
+        <span>scroll</span>
+        <div class="scroll-line">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — ABOUT (50/50 split) -->
+    <section id="about" class="section about">
+      <!-- REPLACE: swap .about-image background in style.css with a portrait of yourself -->
+      <div class="about-image">
+        <div class="about-image-grain"></div>
+      </div>
+      <div class="about-text">
+        <p class="script-line">a little about the wanderer</p>
+        <h2 class="about-title">ENGINEER<br>BY TRADE.<br><span class="gold">WANDERER</span><br>BY WEEKEND.</h2>
+        <p class="about-body">
+          I build things that talk over wireless signals for a living — right now, that means
+          finishing a master's in electronics and computer engineering in Dublin. Off the clock,
+          I'm usually somewhere with worse signal and better light: chasing budget routes across
+          borders, taking notes on the small, specific things that don't make it into guidebooks.
+          This is where those notes live — photographs, half-memoir, short bites, no long essays.
+        </p>
+        <a href="about.html" class="arrow-link" data-hover>
+          <span>read more</span>
+          <svg viewBox="0 0 40 16" width="40" height="16">
+            <path d="M0 8H38M38 8L30 1M38 8L30 15" fill="none" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — COUNTRIES CAROUSEL -->
+    <section id="countries" class="section countries">
+      <div class="carousel-bg" id="carouselBg"></div>
+      <div class="carousel-bg" id="carouselBgNext"></div>
+      <div class="carousel-vignette"></div>
+
+      <button class="carousel-arrow left" id="prevBtn" aria-label="Previous country" data-hover>
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path d="M15 4L7 12L15 20" fill="none" stroke="currentColor" stroke-width="1.3" />
+        </svg>
+      </button>
+
+      <div class="carousel-content">
+        <p class="script-line" id="carouselScript">collected, one border at a time</p>
+        <h2 class="carousel-title" id="countryName">india</h2>
+        <p class="carousel-sub" id="countryTagline">spices, chaotic streets, and ancient temples</p>
+      </div>
+
+      <button class="carousel-arrow right" id="nextBtn" aria-label="Next country" data-hover>
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path d="M9 4L17 12L9 20" fill="none" stroke="currentColor" stroke-width="1.3" />
+        </svg>
+      </button>
+
+      <div class="carousel-index">
+        <span id="countIndex">01</span>
+        <span class="carousel-index-sep">／</span>
+        <span id="countTotal">04</span>
+      </div>
+
+      <div class="carousel-dots" id="dots"></div>
+    </section>
+    <!-- ============================================
+     MARQUEE SECTION — infinite two-line country scroll
+     Drop this <section> between any two existing sections in index.html
+============================================ -->
+    <section id="marquee" class="section marquee-section">
+
+      <div class="marquee-row marquee-row--ltr">
+        <div class="marquee-inner">
+          <div class="marquee-track">
+            <span class="marquee-item">INDIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">IRELAND</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">AUSTRIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">POLAND</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">HUNGARY</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">CZECHIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">SLOVAKIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">SRI LANKA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">UAE</span><span class="marquee-dot">•</span>
+          </div>
+          <div class="marquee-track" aria-hidden="true">
+            <span class="marquee-item">INDIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">IRELAND</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">AUSTRIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">POLAND</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">HUNGARY</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">CZECHIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">SLOVAKIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">SRI LANKA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">UAE</span><span class="marquee-dot">•</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee-row marquee-row--rtl">
+        <div class="marquee-inner">
+          <div class="marquee-track">
+            <span class="marquee-item">SLOVAKIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">CZECHIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">HUNGARY</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">POLAND</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">AUSTRIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">IRELAND</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">INDIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">SRI LANKA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">UAE</span><span class="marquee-dot">•</span>
+          </div>
+          <div class="marquee-track" aria-hidden="true">
+            <span class="marquee-item">SLOVAKIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">CZECHIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">HUNGARY</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">POLAND</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">AUSTRIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">IRELAND</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">INDIA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">SRI LANKA</span><span class="marquee-dot">•</span>
+            <span class="marquee-item">UAE</span><span class="marquee-dot">•</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://instagram.com/" target="_blank" rel="noopener" class="connect-btn" data-hover>
+        <span>let's connect</span>
+      </a>
+
+      <footer class="site-footer">
+        <div class="footer-left">notes from elsewhere</div>
+        <div class="footer-right">designed by Iniyan venkatesan</div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

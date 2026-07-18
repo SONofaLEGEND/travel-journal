@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="about-page-html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about — iniyan venkatesan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Parisienne&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="about-page">
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <span class="preloader-mark">about</span>
+    <div class="preloader-bar">
+      <div class="preloader-fill" id="preloaderFill"></div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <a href="index.html" class="logo" data-hover>
+      <span class="logo-main">iniyan</span>
+      <span class="logo-sub">notes from elsewhere</span>
+    </a>
+    <div class="nav-right">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" data-hover>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen menu overlay -->
+  <nav class="menu-overlay" id="menuOverlay">
+    <ul class="menu-list">
+      <li><a href="index.html#hero" class="menu-link" data-hover>home</a></li>
+      <li><a href="about.html" class="menu-link" data-hover>about</a></li>
+      <li><a href="globe.html" class="menu-link" data-hover>countries</a></li>
+      <li><a href="https://instagram.com/" target="_blank" rel="noopener" class="menu-link" data-hover>instagram</a>
+      </li>
+    </ul>
+    <div class="menu-footer">
+      <span>dublin, ireland</span>
+      <span>est. this year</span>
+    </div>
+  </nav>
+
+  <!-- About Content Wrapper -->
+  <main class="about-layout-wrapper">
+    <section class="about-intro">
+      <div class="about-copy">
+        <p class="eyebrow">about the journey</p>
+        <h1 class="about-large-title">Engineer by trade. Wanderer by heart.</h1>
+        <div class="about-paragraphs">
+          <p class="fade-up-p">Travel is never the destination for me; it is the way a place feels the moment I arrive.
+          </p>
+          <p class="fade-up-p">These notes are small and honest — more about a quiet street, an unexpected meal, and the
+            light that made a city feel familiar.</p>
+          <p class="fade-up-p">I'm Iniyan, a master's student in electronics and computer engineering based in Dublin. I
+            balance lab work with weekend departures, chasing trains, ferries, and flights to somewhere new.</p>
+          <p class="fade-up-p">I've moved through India, Ireland, Sri Lanka, the UAE, Austria, Poland, Hungary, Czechia,
+            and Slovakia on tight budgets that forced me to travel more creatively.</p>
+          <p class="fade-up-p">This site is a quieter corner for travel notes, not polished guides. Just honest
+            observations from elsewhere.</p>
+        </div>
+        <a href="globe.html" class="cta-button" data-hover>SEE COUNTRIES →</a>
+      </div>
+
+      <div class="about-gallery">
+        <div class="img-box gallery-card gallery-card--tall top-left-box">
+          <div class="box-grain"></div>
+        </div>
+        <div class="img-box gallery-card top-right-box">
+          <div class="box-grain"></div>
+        </div>
+        <div class="img-box gallery-card bottom-right-box">
+          <div class="box-grain"></div>
+        </div>
+        <div class="img-box gallery-card gallery-card--wide bottom-left-box">
+          <div class="box-grain"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="assets/js/about.js"></script>
+</body>
+
+</html>

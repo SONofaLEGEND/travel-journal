@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- REPLACE: page title — e.g. "Iniyan — Dublin, Ireland" -->
+  <title>Iniyan — Trip Name</title>
+  <meta name="description" content="<!-- REPLACE: one-line description of this trip -->">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Italiana&family=Parisienne&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/trip.css">
+</head>
+
+<body class="trip-page">
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="preloader" id="preloader">
+    <span class="preloader-mark">iniyan</span>
+    <div class="preloader-bar">
+      <div class="preloader-fill" id="preloaderFill"></div>
+    </div>
+  </div>
+
+  <header class="nav">
+    <a href="index.html" class="logo" data-hover>
+      <span class="logo-main">iniyan</span>
+      <span class="logo-sub">notes from elsewhere</span>
+    </a>
+    <div class="nav-right">
+      <a href="https://instagram.com/" target="_blank" rel="noopener" class="insta-btn" data-hover>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4.2" />
+          <circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" stroke="none" />
+        </svg>
+        <span>instagram</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" data-hover>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="menu-overlay" id="menuOverlay">
+    <ul class="menu-list">
+      <li><a href="index.html#hero" class="menu-link" data-hover>home</a></li>
+      <li><a href="index.html#about" class="menu-link" data-hover>about</a></li>
+      <li><a href="globe.html" class="menu-link" data-hover>the map</a></li>
+      <li><a href="https://instagram.com/" target="_blank" rel="noopener" class="menu-link" data-hover>instagram</a>
+      </li>
+    </ul>
+    <div class="menu-footer">
+      <span>dublin, ireland</span>
+      <span>est. this year</span>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="trip-hero">
+      <!-- REPLACE: set cover photo via inline style or page-specific <style> block -->
+      <div class="trip-hero-bg" id="tripHeroBg"></div>
+      <div class="trip-hero-grain"></div>
+      <div class="trip-hero-vignette"></div>
+
+      <a href="globe.html" class="back-link" data-hover>
+        <svg viewBox="0 0 24 24" width="15" height="15">
+          <path d="M15 4L7 12L15 20" fill="none" stroke="currentColor" stroke-width="1.3" />
+        </svg>
+        <span>back to the map</span>
+      </a>
+
+      <div class="trip-hero-content">
+        <!-- REPLACE: country . entry number -->
+        <p class="eyebrow" id="tripEyebrow">COUNTRY · ENTRY NO. 01</p>
+        <!-- REPLACE: destination name -->
+        <h1 class="trip-hero-title" id="tripTitle">DESTINATION</h1>
+        <div class="trip-meta-row">
+          <!-- REPLACE: month/year, duration, travel style -->
+          <span id="tripDate">MON YYYY</span>
+          <span class="meta-dot">•</span>
+          <span id="tripDuration">N DAYS</span>
+          <span class="meta-dot">•</span>
+          <span id="tripStyle">SOLO</span>
+        </div>
+      </div>
+
+      <div class="scroll-cue" data-hover>
+        <span>read on</span>
+        <div class="scroll-line">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEDE ============ -->
+    <section class="lede-section">
+      <!-- REPLACE: a brief poetic label for this trip -->
+      <p class="script-line center" id="tripScriptLine">the long way round</p>
+      <!-- REPLACE: opening paragraph, 2-4 sentences -->
+      <p class="lede-text" id="tripLede">
+        Opening paragraph goes here. A few sentences that set the mood without giving everything away.
+        Keep it tight — this is the hook, not the essay.
+      </p>
+    </section>
+
+    <!-- ============ BITES ============ -->
+    <section class="bites-section">
+      <div class="bites-grid">
+        <div class="bite-card">
+          <span class="bite-label">THE STAY</span>
+          <p class="bite-text">Where you slept — one sentence, specific detail preferred over star ratings.</p>
+        </div>
+        <div class="bite-card">
+          <span class="bite-label">THE FOOD</span>
+          <p class="bite-text">The dish or the meal that defined the trip. One sentence.</p>
+        </div>
+        <div class="bite-card">
+          <span class="bite-label">THE DETOUR</span>
+          <p class="bite-text">The unplanned thing that turned out best. One sentence.</p>
+        </div>
+        <div class="bite-card">
+          <span class="bite-label">THE COST</span>
+          <p class="bite-text">£/€/$XX per day, [what's included].</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PHOTO BREAK — full bleed ============ -->
+    <figure class="photo-break">
+      <!-- REPLACE: add style="background-image:url('../photos/trip-name/photo.jpg')" -->
+      <div class="photo-break-img pb-1" id="photoBreak1"></div>
+      <figcaption id="photoBreak1Caption">Photo caption goes here</figcaption>
+    </figure>
+
+    <!-- ============ MEMOIR SPLIT 1 — image left, text right ============ -->
+    <section class="memoir-split">
+      <!-- REPLACE: add style="background-image:url('../photos/trip-name/photo.jpg')" -->
+      <div class="memoir-image mi-1" id="memoirImage1"></div>
+      <div class="memoir-text">
+        <p class="script-line" id="memoirDay1">day two</p>
+        <p id="memoirText1">
+          Short memoir paragraph. 3-6 sentences. Specific details beat general impressions.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ MEMOIR SPLIT 2 — text left, image right ============ -->
+    <section class="memoir-split reverse">
+      <!-- REPLACE: add style="background-image:url('../photos/trip-name/photo.jpg')" -->
+      <div class="memoir-image mi-2" id="memoirImage2"></div>
+      <div class="memoir-text">
+        <p class="script-line" id="memoirDay2">day four</p>
+        <p id="memoirText2">
+          Second memoir paragraph. Same rules — 3-6 sentences, specific over vague.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ PULL QUOTE ============ -->
+    <section class="pull-quote-section">
+      <span class="quote-mark">"</span>
+      <!-- REPLACE: a single memorable line from the memoir above -->
+      <p class="pull-quote" id="tripPullQuote">A single memorable line from the narrative above.</p>
+    </section>
+
+    <!-- ============ GALLERY — compact mosaic ============ -->
+    <section class="gallery-section">
+      <p class="script-line center">a few more, out of order</p>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- REPLACE: add style="background-image:url('../photos/trip-name/photo.jpg')" and data-caption to each -->
+        <button class="gallery-item g-1" data-hover data-caption="Caption 1"></button>
+        <button class="gallery-item g-2" data-hover data-caption="Caption 2"></button>
+        <button class="gallery-item g-3" data-hover data-caption="Caption 3"></button>
+        <button class="gallery-item g-4" data-hover data-caption="Caption 4"></button>
+        <button class="gallery-item g-5" data-hover data-caption="Caption 5"></button>
+        <button class="gallery-item g-6" data-hover data-caption="Caption 6"></button>
+      </div>
+    </section>
+
+    <!-- ============ CLOSING / STATS RECAP ============ -->
+    <section class="closing-section">
+      <div class="closing-stats">
+        <!-- REPLACE: numbers -->
+        <div class="stat"><span class="stat-num" id="statDays">0</span><span class="stat-label">days</span></div>
+        <div class="stat"><span class="stat-num" id="statKm">0</span><span class="stat-label">km covered</span></div>
+        <div class="stat"><span class="stat-num" id="statSpend">£0</span><span class="stat-label">total spend</span>
+        </div>
+        <div class="stat"><span class="stat-num" id="statExtra">0</span><span class="stat-label">highlight stat</span>
+        </div>
+      </div>
+      <!-- REPLACE: closing line, one or two sentences -->
+      <p class="closing-line" id="tripClosingLine">
+        Closing thought goes here — one or two sentences, then move on.
+      </p>
+    </section>
+
+    <!-- ============ NEXT ENTRY NAV ============ -->
+    <nav class="entry-nav">
+      <!-- REPLACE href/labels with actual prev/next trip pages -->
+      <a href="#" class="entry-nav-link prev" id="prevTripLink" data-hover>
+        <svg viewBox="0 0 24 24" width="16" height="16">
+          <path d="M15 4L7 12L15 20" fill="none" stroke="currentColor" stroke-width="1.3" />
+        </svg>
+        <span class="entry-nav-meta">
+          <span class="entry-nav-label">previous entry</span>
+          <span class="entry-nav-title" id="prevTripTitle">—</span>
+        </span>
+      </a>
+      <a href="globe.html" class="entry-nav-map" data-hover>back to the map</a>
+      <a href="#" class="entry-nav-link next" id="nextTripLink" data-hover>
+        <span class="entry-nav-meta">
+          <span class="entry-nav-label">next entry</span>
+          <span class="entry-nav-title" id="nextTripTitle">—</span>
+        </span>
+        <svg viewBox="0 0 24 24" width="16" height="16">
+          <path d="M9 4L17 12L9 20" fill="none" stroke="currentColor" stroke-width="1.3" />
+        </svg>
+      </a>
+    </nav>
+
+  </main>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" data-hover aria-label="Close">
+      <svg viewBox="0 0 24 24" width="20" height="20">
+        <path d="M4 4L20 20M20 4L4 20" fill="none" stroke="currentColor" stroke-width="1.3" />
+      </svg>
+    </button>
+    <div class="lightbox-image" id="lightboxImage"></div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="assets/js/trip.js"></script>
+</body>
+
+</html>

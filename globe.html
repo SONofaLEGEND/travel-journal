@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniyan — The Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Parisienne&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/globe.css">
+</head>
+<body class="globe-page">
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <span class="preloader-mark">iniyan</span>
+    <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+  </div>
+
+  <!-- Nav (same system as index.html) -->
+  <header class="nav">
+    <a href="index.html" class="logo" data-hover>
+      <span class="logo-main">iniyan</span>
+      <span class="logo-sub">the map</span>
+    </a>
+    <div class="nav-right">
+      <a href="https://instagram.com/" target="_blank" rel="noopener" class="insta-btn" data-hover>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4.2"/>
+          <circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>instagram</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" data-hover>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="menu-overlay" id="menuOverlay">
+    <ul class="menu-list">
+      <li><a href="index.html#hero" class="menu-link" data-hover>home</a></li>
+      <li><a href="index.html#about" class="menu-link" data-hover>about</a></li>
+      <li><a href="globe.html" class="menu-link" data-hover>the map</a></li>
+      <li><a href="https://instagram.com/" target="_blank" rel="noopener" class="menu-link" data-hover>instagram</a></li>
+    </ul>
+    <div class="menu-footer">
+      <span>dublin, ireland</span>
+      <span>est. this year</span>
+    </div>
+  </nav>
+
+  <!-- GLOBE STAGE -->
+  <main class="globe-stage">
+
+    <div class="globe-heading-scrim"></div>
+    <div class="globe-heading">
+      <p class="script-line">collected, one border at a time</p>
+      <h1 class="globe-title">THE MAP<span class="gold">.</span></h1>
+    </div>
+
+    <div id="globeCanvas" class="globe-canvas"></div>
+    <div class="marker-labels" id="markerLabels"></div>
+
+    <div class="globe-tooltip" id="tooltip"></div>
+
+    <p class="globe-hint" id="globeHint">drag to explore · click a highlight</p>
+
+    <div class="globe-legend">
+      <span id="legendCount">06</span>
+      <span class="globe-legend-label">countries mapped</span>
+    </div>
+
+    <!-- TRIP PANEL -->
+    <aside class="trip-panel" id="tripPanel">
+      <button class="trip-panel-close" id="panelClose" aria-label="Close" data-hover>
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M4 4L20 20M20 4L4 20" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+      </button>
+      <p class="script-line" id="panelScript">trips in</p>
+      <h2 class="trip-panel-title" id="panelCountry">GREECE</h2>
+      <div class="trip-card-list" id="tripCardList"></div>
+    </aside>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+  <script src="assets/js/globe.js"></script>
+</body>
+</html>

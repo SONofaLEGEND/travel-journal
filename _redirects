@@ -1,0 +1,4 @@
+# Cloudflare Pages — redirect rules
+# All routes are static HTML; no dynamic redirects needed.
+# Fallback: any unmatched route → 404 page
+/*    /index.html    404

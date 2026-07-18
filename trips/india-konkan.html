@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniyan — Konkan Coast, India</title>
+  <meta name="description" content="Travel notes from Konkan Coast, India by Iniyan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Italiana&family=Parisienne&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/trip.css">
+  <style>
+    /* ── page-specific photos ───────────────────────────────────── */
+    /* Replace the gradient placeholders below with real image URLs  */
+    /* once you upload photos to photos/india/               */
+    .trip-hero-bg {
+      background: linear-gradient(160deg, #33322c 0%, #0a0a0a 55%, #000 100%);
+    }
+
+    .photo-break-img.pb-1 {
+      background: linear-gradient(150deg, #35332c 0%, #0a0a0a 70%);
+    }
+
+    .memoir-image.mi-1 {
+      background: linear-gradient(200deg, #3a3831 0%, #0a0a0a 70%);
+    }
+
+    .memoir-image.mi-2 {
+      background: linear-gradient(210deg, #302f2a 0%, #0a0a0a 70%);
+    }
+
+    .gallery-item.g-1 {
+      grid-column: span 3;
+      grid-row: span 2;
+      background: linear-gradient(160deg, #37352e, #0a0a0a 75%);
+    }
+
+    .gallery-item.g-2 {
+      grid-column: span 3;
+      grid-row: span 1;
+      background: linear-gradient(160deg, #2f2e29, #0a0a0a 75%);
+    }
+
+    .gallery-item.g-3 {
+      grid-column: span 3;
+      grid-row: span 1;
+      background: linear-gradient(160deg, #312f2a, #0a0a0a 75%);
+    }
+
+    .gallery-item.g-4 {
+      grid-column: span 2;
+      grid-row: span 1;
+      background: linear-gradient(160deg, #302e28, #0a0a0a 75%);
+    }
+
+    .gallery-item.g-5 {
+      grid-column: span 2;
+      grid-row: span 1;
+      background: linear-gradient(160deg, #34322c, #0a0a0a 75%);
+    }
+
+    .gallery-item.g-6 {
+      grid-column: span 2;
+      grid-row: span 1;
+      background: linear-gradient(160deg, #2d2c27, #0a0a0a 75%);
+    }
+  </style>
+</head>
+
+<body class="trip-page">
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="preloader" id="preloader">
+    <span class="preloader-mark">iniyan</span>
+    <div class="preloader-bar">
+      <div class="preloader-fill" id="preloaderFill"></div>
+    </div>
+  </div>
+
+  <header class="nav">
+    <a href="../index.html" class="logo" data-hover>
+      <span class="logo-main">iniyan</span>
+      <span class="logo-sub">notes from elsewhere</span>
+    </a>
+    <div class="nav-right">
+      <a href="https://instagram.com/" target="_blank" rel="noopener" class="insta-btn" data-hover>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4.2" />
+          <circle cx="17.4" cy="6.6" r="0.9" fill="currentColor" stroke="none" />
+        </svg>
+        <span>instagram</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" data-hover>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="menu-overlay" id="menuOverlay">
+    <ul class="menu-list">
+      <li><a href="../index.html#hero" class="menu-link" data-hover>home</a></li>
+      <li><a href="../index.html#about" class="menu-link" data-hover>about</a></li>
+      <li><a href="../globe.html" class="menu-link" data-hover>the map</a></li>
+      <li><a href="https://instagram.com/" target="_blank" rel="noopener" class="menu-link" data-hover>instagram</a>
+      </li>
+    </ul>
+    <div class="menu-footer">
+      <span>dublin, ireland</span>
+      <span>est. this year</span>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="trip-hero">
+      <div class="trip-hero-bg"></div>
+      <div class="trip-hero-grain"></div>
+      <div class="trip-hero-vignette"></div>
+
+      <a href="../globe.html" class="back-link" data-hover>
+        <svg viewBox="0 0 24 24" width="15" height="15">
+          <path d="M15 4L7 12L15 20" fill="none" stroke="currentColor" stroke-width="1.3" />
+        </svg>
+        <span>back to the map</span>
+      </a>
+
+      <div class="trip-hero-content">
+        <!-- REPLACE: update eyebrow, title, date, duration, style -->
+        <p class="eyebrow">INDIA · ENTRY NO. 03</p>
+        <h1 class="trip-hero-title">KONKAN COAST</h1>
+        <div class="trip-meta-row">
+          <span><!-- DATE --></span>
+          <span class="meta-dot">•</span>
+          <span><!-- DURATION --></span>
+          <span class="meta-dot">•</span>
+          <span>SOLO</span>
+        </div>
+      </div>
+
+      <div class="scroll-cue" data-hover>
+        <span>read on</span>
+        <div class="scroll-line">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEDE ============ -->
+    <section class="lede-section">
+      <p class="script-line center"><!-- REPLACE: poetic subtitle --></p>
+      <!-- REPLACE: opening paragraph, 2-4 sentences -->
+      <p class="lede-text">
+        Opening paragraph for Konkan Coast, India goes here.
+      </p>
+    </section>
+
+    <!-- ============ BITES ============ -->
+    <section class="bites-section">
+      <div class="bites-grid">
+        <div class="bite-card">
+          <span class="bite-label">THE STAY</span>
+          <p class="bite-text"><!-- REPLACE --></p>
+        </div>
+        <div class="bite-card">
+          <span class="bite-label">THE FOOD</span>
+          <p class="bite-text"><!-- REPLACE --></p>
+        </div>
+        <div class="bite-card">
+          <span class="bite-label">THE DETOUR</span>
+          <p class="bite-text"><!-- REPLACE --></p>
+        </div>
+        <div class="bite-card">
+          <span class="bite-label">THE COST</span>
+          <p class="bite-text"><!-- REPLACE --></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PHOTO BREAK — full bleed ============ -->
+    <!-- REPLACE gradient with: style="background-image:url('../photos/india/cover.jpg')" -->
+    <figure class="photo-break">
+      <div class="photo-break-img pb-1"></div>
+      <figcaption><!-- REPLACE: caption --></figcaption>
+    </figure>
+
+    <!-- ============ MEMOIR SPLIT 1 — image left, text right ============ -->
+    <!-- REPLACE gradient with: style="background-image:url('../photos/india/mid1.jpg')" -->
+    <section class="memoir-split">
+      <div class="memoir-image mi-1"></div>
+      <div class="memoir-text">
+        <p class="script-line"><!-- REPLACE: e.g. "day two" --></p>
+        <p><!-- REPLACE: 3-6 sentences --></p>
+      </div>
+    </section>
+
+    <!-- ============ MEMOIR SPLIT 2 — text left, image right ============ -->
+    <!-- REPLACE gradient with: style="background-image:url('../photos/india/mid2.jpg')" -->
+    <section class="memoir-split reverse">
+      <div class="memoir-image mi-2"></div>
+      <div class="memoir-text">
+        <p class="script-line"><!-- REPLACE: e.g. "day four" --></p>
+        <p><!-- REPLACE: 3-6 sentences --></p>
+      </div>
+    </section>
+
+    <!-- ============ PULL QUOTE ============ -->
+    <section class="pull-quote-section">
+      <span class="quote-mark">"</span>
+      <!-- REPLACE: one memorable line -->
+      <p class="pull-quote">A single memorable line from the narrative above.</p>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <!-- REPLACE gradient on each .gallery-item with style="background-image:url('../photos/india/g1.jpg')" -->
+    <section class="gallery-section">
+      <p class="script-line center">a few more, out of order</p>
+      <div class="gallery-grid" id="galleryGrid">
+        <button class="gallery-item g-1" data-hover data-caption="<!-- caption -->"></button>
+        <button class="gallery-item g-2" data-hover data-caption="<!-- caption -->"></button>
+        <button class="gallery-item g-3" data-hover data-caption="<!-- caption -->"></button>
+        <button class="gallery-item g-4" data-hover data-caption="<!-- caption -->"></button>
+        <button class="gallery-item g-5" data-hover data-caption="<!-- caption -->"></button>
+        <button class="gallery-item g-6" data-hover data-caption="<!-- caption -->"></button>
+      </div>
+    </section>
+
+    <!-- ============ CLOSING / STATS ============ -->
+    <section class="closing-section">
+      <div class="closing-stats">
+        <div class="stat"><span class="stat-num"><!-- N --></span><span class="stat-label">days</span></div>
+        <div class="stat"><span class="stat-num"><!-- N --></span><span class="stat-label">km covered</span></div>
+        <div class="stat"><span class="stat-num"><!-- £/€/$ --></span><span class="stat-label">total spend</span></div>
+        <div class="stat"><span class="stat-num"><!-- N --></span><span class="stat-label"><!-- stat label --></span>
+        </div>
+      </div>
+      <!-- REPLACE: one or two sentences -->
+      <p class="closing-line">Closing thought for Konkan Coast, India.</p>
+    </section>
+
+    <!-- ============ ENTRY NAV ============ -->
+    <nav class="entry-nav">
+      <a href="india-varkala.html" class="entry-nav-link prev" data-hover>
+        <svg viewBox="0 0 24 24" width="16" height="16">
+          <path d="M15 4L7 12L15 20" fill="none" stroke="currentColor" stroke-width="1.3" />
+        </svg>
+        <span class="entry-nav-meta">
+          <span class="entry-nav-label">previous entry</span>
+          <span class="entry-nav-title">Varkala</span>
+        </span>
+      </a>
+      <a href="../globe.html" class="entry-nav-map" data-hover>back to the map</a>
+      <a href="india-western-ghats.html" class="entry-nav-link next" data-hover>
+        <span class="entry-nav-meta">
+          <span class="entry-nav-label">next entry</span>
+          <span class="entry-nav-title">Western Ghats</span>
+        </span>
+        <svg viewBox="0 0 24 24" width="16" height="16">
+          <path d="M9 4L17 12L9 20" fill="none" stroke="currentColor" stroke-width="1.3" />
+        </svg>
+      </a>
+    </nav>
+
+  </main>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" data-hover aria-label="Close">
+      <svg viewBox="0 0 24 24" width="20" height="20">
+        <path d="M4 4L20 20M20 4L4 20" fill="none" stroke="currentColor" stroke-width="1.3" />
+      </svg>
+    </button>
+    <div class="lightbox-image" id="lightboxImage"></div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="../assets/js/trip.js"></script>
+</body>
+
+</html>
