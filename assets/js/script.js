@@ -12,7 +12,7 @@ window.addEventListener('mousemove', (e) => {
   mouseY = e.clientY;
 });
 
-function animateCursor(){
+function animateCursor() {
   // Smoothly interpolate inner cursor dot to reduce twitchiness
   cursorX += (mouseX - cursorX) * 0.25;
   cursorY += (mouseY - cursorY) * 0.25;
@@ -115,10 +115,10 @@ window.addEventListener('scroll', () => {
    Edit this array to add your own countries, taglines, and photos.
 ============================================ */
 const countries = [
-  { name: 'india',     tagline: 'spices, chaotic streets, and ancient temples',        image: 'assets/images/india.png' },
-  { name: 'ireland',   tagline: 'grey skies that make the green feel earned',         image: 'assets/images/ireland.png' },
-  { name: 'sri lanka', tagline: 'tea plantations, wild elephants, and warm waves',   image: 'assets/images/srilanka.png' },
-  { name: 'uae',       tagline: 'desert dunes, soaring towers, and quiet oases',       image: 'assets/images/uae.png' },
+  { name: 'india', tagline: 'spices, chaotic streets, and ancient temples', image: 'assets/images/india.png' },
+  { name: 'ireland', tagline: 'grey skies that make the green feel earned', image: 'assets/images/ireland.jpg' },
+  { name: 'sri lanka', tagline: 'tea plantations, wild elephants, and warm waves', image: 'assets/images/srilanka.jpg' },
+  { name: 'uae', tagline: 'desert dunes, soaring towers, and quiet oases', image: 'assets/images/uae.jpg' },
 ];
 
 let currentIndex = 0;
@@ -131,9 +131,9 @@ const totalEl = document.getElementById('countTotal');
 const dotsWrap = document.getElementById('dots');
 let usingA = true;
 
-function pad(n){ return n < 10 ? '0' + n : n; }
+function pad(n) { return n < 10 ? '0' + n : n; }
 
-function buildDots(){
+function buildDots() {
   countries.forEach((_, i) => {
     const d = document.createElement('div');
     d.className = 'dot' + (i === 0 ? ' active' : '');
@@ -147,7 +147,7 @@ bgA.style.backgroundImage = `url('${countries[0].image}')`;
 bgA.style.backgroundSize = 'cover';
 bgA.style.backgroundPosition = 'center';
 
-function goTo(index){
+function goTo(index) {
   currentIndex = (index + countries.length) % countries.length;
   const data = countries[currentIndex];
   const showEl = usingA ? bgB : bgA;

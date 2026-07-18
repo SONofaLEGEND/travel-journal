@@ -249,8 +249,11 @@ function initScene(){
 
   globeGroup = new THREE.Group();
   globeGroup.rotation.x = 0.18;
-  globeGroup.position.y = -0.5; // shifts the whole globe down to clear the heading, world-space so raycasting still lines up
+  // On mobile the heading is compact so we need less downward shift
+  const isMobile = width < 860;
+  globeGroup.position.y = isMobile ? -0.18 : -0.5;
   scene.add(globeGroup);
+
 
   // lights so the sphere reads as a lit 3D form, not a flat black disc
   const key = new THREE.DirectionalLight(0xf4ecd8, 1.1);
@@ -483,6 +486,8 @@ window.addEventListener('resize', () => {
   fitCamera();
   camera.updateProjectionMatrix();
   renderer.setSize(width, height);
+  // Re-apply mobile offset on orientation change
+  globeGroup.position.y = width < 860 ? -0.18 : -0.5;
 });
 
 /* ============================================

@@ -232,8 +232,53 @@
    RESPONSIVE
 ============================================ */
 @media (max-width:860px){
-  .globe-heading{ top:104px; }
-  .globe-legend{ left:24px; bottom:28px; }
-  .globe-hint{ bottom:28px; font-size:10px; }
+  /* Move heading down to clear navbar and sit closer to globe */
+  .globe-heading{
+    top: 130px;
+    gap: 2px;
+  }
+  .globe-heading .script-line{
+    font-size: 16px;
+  }
+  .globe-title{
+    font-size: clamp(26px, 7vw, 38px);
+  }
+
+  /* Push hint up to be closer to globe */
+  .globe-hint{
+    bottom: 90px;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    padding: 0 16px;
+  }
+
+  /* Push legend up slightly */
+  .globe-legend{
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    justify-content: center;
+    gap: 8px;
+  }
+
   .trip-panel{ padding:96px 24px 28px; }
+}
+
+@media (max-width:480px){
+  .globe-heading{
+    top: 140px;
+  }
+  .globe-heading .script-line{
+    display: block; /* Ensure it stays visible */
+  }
+  .globe-title{
+    font-size: clamp(28px, 9vw, 40px);
+  }
+  .globe-hint{
+    bottom: 100px;
+    font-size: 9px;
+  }
+  .globe-legend{
+    bottom: 50px;
+  }
 }
